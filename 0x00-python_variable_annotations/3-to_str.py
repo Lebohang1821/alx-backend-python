@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-'''Task 3's module.
+'''the asic annotations - to string
 '''
 
 
 def to_str(n: float) -> str:
-    '''Converts a floating-point number to a string.
+    '''It converts floating point numbr to string
     '''
     return str(n)
