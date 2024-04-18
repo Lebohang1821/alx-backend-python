@@ -3,7 +3,7 @@
 '''
 
 
-a: int = 1
-pi: float = 3.14
-i_understand_annotations: bool = True
-school: str = 'Holberton'
+a = 1  # An integer variable named 'a' with a value of 1
+pi = 3.14  # A float variable named 'pi' with a value of 3.14
+i_understand_annotations = True
+school = "Holberton"
