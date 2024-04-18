@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-'''Task 7's module.
+'''The omplex types - string and int/float tuple
 '''
 from typing import Union, Tuple
 
 
 def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
-    '''Converts a key and its value to a tuple of the key and
-    the square of its value.
+    '''It converts key and its value to tuple of key and
+    square of its value
     '''
     return (k, float(v**2))
