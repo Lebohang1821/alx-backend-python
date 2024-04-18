@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-'''The basic annotations - floor
+'''Duck typing, first element of sequence
 '''
 from typing import Any, Sequence, Union
 
