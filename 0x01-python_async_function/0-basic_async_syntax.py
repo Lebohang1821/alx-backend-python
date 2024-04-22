@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-'''Task 0'''
+'''basics of async'''
 import asyncio
 import random
 
 
 async def wait_random(max_delay: int = 10) -> float:
-    '''WAits for a random number of seconds
+    '''It waits for random amount of time and 
+       then returns duration of wait
     '''
     wait_time = random.random() * max_delay
     await asyncio.sleep(wait_time)
