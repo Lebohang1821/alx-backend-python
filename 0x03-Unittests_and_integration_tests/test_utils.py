@@ -17,7 +17,7 @@ class TestAccessNestedMap(unittest.TestCase):
         ({"a": {"b": 2}}, ("a", "b"), 2)
     ])
     def test_access_nested_map(self, nested_map, path, expected):
-        """Tests that it returns expected result."""
+        """Tests that it returns expected result"""
         self.assertEqual(access_nested_map(nested_map, path), expected)
 
     @parameterized.expand([
@@ -25,7 +25,7 @@ class TestAccessNestedMap(unittest.TestCase):
         ({"a": 1}, ("a", "b"), 'b')
     ])
     def test_access_nested_map_exception(self, nested_map, path, expected):
-        """Tests that KeyError is raised for respective inputs."""
+        """Tests that KeyError is raised for respective inputs"""
         with self.assertRaises(KeyError) as e:
             access_nested_map(nested_map, path)
         self.assertEqual(f"KeyError('{expected}')", repr(e.exception))
@@ -39,7 +39,7 @@ class TestGetJson(unittest.TestCase):
         ("http://holberton.io", {"payload": False})
     ])
     def test_get_json(self, test_url, test_payload):
-        """Tests that get_json returns expected result."""
+        """It tests that get_json returns expected result"""
         config = {'return_value.json.return_value': test_payload}
         patcher = patch('requests.get', **config)
         mock = patcher.start()
@@ -49,7 +49,7 @@ class TestGetJson(unittest.TestCase):
 
 
 class TestMemoize(unittest.TestCase):
-    """Test class to test memoize"""
+    """It test class to test memoize"""
 
     def test_memoize(self):
         """Tests that correct result is returned when calling a_property twice,
